@@ -4,6 +4,59 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+	<style>
+  .logo-text-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espacio entre logo y texto */
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-text-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+    margin: 0;
+	margin-top:5%;
+	font-style: italic;
+ }
+  .actions {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+
+  .actions li {
+    flex: 1;
+    width: 100%;
+  }
+
+  .full-width-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .logo-text-container {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .logo-text-container img {
+      width: 200px;
+    }
+
+    .intro-text {
+      max-width: 400px;
+    }
+  }
+</style>
 <html>
 	<head>
 		<title>Estudio jurídico Panella-Remuiñan</title>
@@ -21,7 +74,7 @@
 						<ul>
 							<li><a href="#intro">Bienvenido</a></li>
 							<li><a href="#one">Nosotros</a></li>
-							<li><a href="#two">Nuestro objetivo</a></li>
+							<li><a href="#two">Nuestros Servicios Jurídicos</a></li>
 							<li><a href="#three">Contactenos</a></li>
 						</ul>
 					</nav>
@@ -30,17 +83,23 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+  			<div class="inner">
+    		<h1 style="display: none;">Estudio Panella-Remuiñan</h1>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Estudio Panella-Remuiñan</h1>
-							<p>Compromiso, experiencia y soluciones legales a medida.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Ver más</a></li>
-							</ul>
-						</div>
-					</section>
+    		<div class="logo-text-container">
+      			<a href="#" class="image">
+        		<img src="images/estudioLogo.png" alt="Estudio Panella-Remuiñan" style="width: 80%;" data-position="center center" />
+      			</a>
+      			<p class="intro-text">Compromiso, experiencia y soluciones legales a medida.</p>
+    		</div>
+
+    		<ul class="actions">
+      			<li style="width: 100%;"><a href="#one" class="button scrolly full-width-button">Ver más</a></li>
+    		</ul>
+  			</div>
+		</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
@@ -85,39 +144,57 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>Nuestro objetivo</h2>
+							<h2>Nuestros Servicios Jurídicos</h2>
 							<p>Nos caracteriza la cercanía, el rigor y la búsqueda constante de soluciones prácticas, sostenibles y eficaces. Conformamos un equipo multidisciplinario que trabaja con responsabilidad, ética y compromiso en cada caso.</p>
 </p>
 							<div class="features">
 								<section>
-									<span class="icon solid major fa-people-roof"></span>
-									<h3>Derecho Civil</h3>
-									<p>Asesoramiento en temas de responsabilidad civil, daños y perjuicios, sucesiones, contratos, y conflictos entre particulares.</p>
+									<span class="icon solid major fa-user-injured"></span>
+									<h3>Accidente Laboral – Reclamos e Indemnizaciones</h3>
+									<p>¿Sufriste un accidente en tu lugar de trabajo o camino al mismo? En Panella Remuiñán te ayudamos a reclamar tus derechos frente a ART o empleadores, gestionando indemnizaciones por accidentes laborales conforme a la legislación vigente.
+</br><a href="#three" >✔ Consultanos para iniciar tu reclamo laboral.</a></p>
 								</section>
 								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Derecho Laboral</h3>
-									<p>Representación en reclamos por despidos, accidentes de trabajo, liquidaciones y derechos laborales, tanto para trabajadores como empleadores.</p>
+									<span class="icon solid major fa-briefcase-medical"></span>
+									<h3>Enfermedad Laboral e Inculpable – Asesoramiento Legal Integral</h3>
+									<p>Brindamos asistencia legal ante enfermedades laborales (por exposición a riesgos en el trabajo) y enfermedades inculpables (ajenas al empleo pero que impiden trabajar). Te explicamos qué te corresponde cobrar y cómo actuar.
+</br><a href="#three" >✔ Protegé tu salud y tus derechos laborales.</a></p>
 								</section>
 								<section>
-									<span class="icon solid major fa-people-roof"></span>
-									<h3>Derecho de Familia</h3>
-									<p>Intervención en procesos de divorcio, alimentos, régimen de comunicación, tenencia y adopciones, con una mirada humana y profesional.</p>
+									<span class="icon solid major fa-briefcase"></span>
+									<h3>Despido Injustificado – Defensa de Trabajadores</h3>
+									<p>Si te despidieron sin causa o sin una notificación clara por escrito, tenés derecho a una indemnización. Nuestro estudio te representa en reclamos laborales por despidos arbitrarios o discriminatorios.
+</br><a href="#three" >✔ Reclamá lo que te corresponde por despido.</a></p>
 								</section>
 								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Derecho Comercial y Empresarial</h3>
-									<p>Asistencia legal a empresas y emprendedores en contratos, sociedades, cobranzas, conflictos comerciales y prevención de riesgos legales.</p>
+									<span class="icon solid major fa-file-contract"></span>
+									<h3>Daños y Perjuicios – Reclamos por Responsabilidad Civil</h3>
+									<p>¿Sufriste un daño físico, moral o económico por culpa de otro? Iniciamos acciones legales para que obtengas la reparación total. Trabajamos en casos de responsabilidad civil extracontractual.
+</br><a href="#three" >✔ Consultá tu caso con nuestros abogados civiles.</a></p>
 								</section>
 								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Derecho Penal</h3>
-									<p>Defensa y patrocinio en causas penales, denuncias, querellas y asesoramiento en todas las etapas del proceso penal.</p>
+									<span class="icon solid major fa-car-crash"></span>
+									<h3>Accidentes de Tránsito – Indemnizaciones y Defensa Legal</h3>
+									<p>Si fuiste víctima de un accidente como peatón, conductor, ciclista o pasajero, tenés derecho a ser indemnizado. Nos encargamos de todas las gestiones legales y reclamos ante seguros.
+</br><a href="#three" >✔ Reclamá tu indemnización por accidente vial.</a></p>
 								</section>
 								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Asesoramiento Preventivo Integral</h3>
-									<p>Diseño de estrategias legales personalizadas para prevenir conflictos, proteger patrimonios y garantizar el cumplimiento normativo.</p>
+									<span class="icon solid major fa-balance-scale"></span>
+									<h3>Incumplimientos Contractuales – Reclamá tus Derechos</h3>
+									<p>Cuando una parte no cumple lo pactado en un contrato (civil, comercial o laboral), se puede exigir una compensación por los daños ocasionados. Te asesoramos en redacción, análisis y litigios contractuales.
+</br><a href="#three" >✔ Defendé tus derechos contractuales.</a></p>
+								</section>
+								<section>
+									<span class="icon solid major fa-users"></span>
+									<h3>Derecho de Familia – Cuota Alimentaria, Cuidado Personal y Régimen de Comunicación</h3>
+									<p>Brindamos asistencia legal en conflictos familiares: alimentos, cuidado de hijos (tenencia) y régimen de visitas. Defendemos tus derechos y buscamos soluciones justas y sostenibles.
+</br><a href="#three" >✔ Protegé el bienestar de tus hijos y tu vínculo familiar.</a></p>
+								</section>
+								<section>
+									<span class="icon solid major fa-house-damage"></span>
+									<h3>Divorcio Judicial – Acompañamiento Legal Personalizado</h3>
+									<p>Te acompañamos en todo el proceso de divorcio, ya sea de común acuerdo o conflictivo. Trabajamos con sensibilidad y compromiso para resolver el vínculo legal de manera clara y efectiva.
+									</br><a href="#three" >✔ Empezá tu divorcio con asesoramiento profesional.</a></p>
 								</section>
 							</div>
 
