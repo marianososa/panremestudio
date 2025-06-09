@@ -41,6 +41,51 @@
     width: 100%;
     text-align: center;
   }
+  /* Botón Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed; /* Hace que el elemento "flote" en la pantalla */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    bottom: 40px; /* Distancia desde la parte inferior de la pantalla */
+    right: 40px; /* Distancia desde el lado derecho de la pantalla */
+    background-color: #25d366; /* Color de fondo del icono de WhatsApp */
+    color: #FFF; /* Color del icono (si fuera texto) */
+    border-radius: 50px; /* Para hacerlo redondo */
+    text-align: center; /* Centra la imagen */
+    font-size: 30px; /* Tamaño de fuente si tuvieras texto */
+    box-shadow: 2px 2px 3px #999; /* Sombra sutil para darle profundidad */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex; /* Para centrar la imagen dentro del círculo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+.whatsapp-float img {
+    width: 35px; /* Tamaño del logo dentro del círculo */
+    height: 35px; /* Asegura que la imagen sea proporcional */
+    /* Asegúrate de que el logo tenga fondo transparente para que se vea bien */
+}
+
+/* Efecto al pasar el ratón por encima (hover) */
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Hace que el botón se agrande ligeramente */
+}
+
+/* Opcional: Ajustar para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+}
   @media (min-width: 768px) {
     .logo-text-container {
       flex-wrap: nowrap;
@@ -246,15 +291,6 @@ Completá el formulario, escribinos por correo o llamanos. Nuestro equipo respon
 											<h3>Teléfono</h3>
 											<span>2615-377135/ 2614-692409</span>
 										</li>
-										<li>
-											<h3>Redes sociales</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
 									</ul>
 								</section>
 							</div>
@@ -267,10 +303,13 @@ Completá el formulario, escribinos por correo o llamanos. Nuestro equipo respon
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; MSWeb. All rights reserved.</li><li></li>
+						<li>&copy; MSWeb. Todos los derechos reservados.</li><li></li>
 					</ul>
 				</div>
 			</footer>
+<a href="https://wa.me/5492615377135?text=Hola Estudio Panella-Remuiñan!%20Vengo%20de%20su%20página%20web%20y%20necesito%20realizar%20una%20consulta." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="images/whatsapp_logo.png" alt="WhatsApp">
+    </a>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
