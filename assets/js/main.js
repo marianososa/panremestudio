@@ -33,16 +33,16 @@
 	// Forms.
 
 		// Hack: Activate non-input submits.
-			$('form').on('click', '.submit', function(event) {
+		//	$('form').on('click', '.submit', function(event) {
 
 				// Stop propagation, default.
-					event.stopPropagation();
-					event.preventDefault();
+//					event.stopPropagation();
+//					event.preventDefault();
 
 				// Submit form.
-					$(this).parents('form').submit();
+//					$(this).parents('form').submit();
 
-			});
+//			});
 
 	// Sidebar.
 		if ($sidebar.length > 0) {
